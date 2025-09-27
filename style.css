@@ -961,3 +961,42 @@ ul.bullets li {
   clip: rect(0,0,0,0);
   border: 0;
 }
+
+
+/* Stats Section */
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+  list-style: none;
+  padding: 0;
+}
+
+.stats li {
+  text-align: center;
+}
+
+.stats strong {
+  font-size: 2.5rem;
+  color: #1a73e8;
+  display: block;
+}
+
+.stats span {
+  font-size: 1rem;
+  color: white;
+}
+
+/*ignite innovate impact typed text*/
+.typed-cursor {
+  display: inline-block;
+  animation: blink 2s infinite;
+  color: beige; /* cursor color */
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
