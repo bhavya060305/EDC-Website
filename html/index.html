@@ -9,31 +9,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" href="img/EDC_logo.png">
+    
 </head>
 <body>
-    <header class="site-header" >
+    <header class="site-header">
         <div class="container header-inner">
             <a class="brand" href="#top" aria-label="E-Cell Home">
-                <img id="ecell-logo" src="img/EDC_full_logo.png" alt draggable="false" width="" height="66">
+                <img src="img/edc-logo.jpg" alt="E-Cell Logo" class="logo" width="66" height="66">
+                <span class="brand-text">E-Cell</span>
             </a>
             <button class="nav-toggle"  aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
                 <span></span><span></span><span></span>
             </button>
-            <nav id="primaryNav" class="nav" aria-label="Primary">
-                <a href="#home">HOME</a>
-                <a href="#events">EVENTS</a>
-                <a href="#team">TEAM</a>
-                <a href="#gallery">GALLERY</a>
-                <a href="#about">ABOUT US</a>
-                <a href="#join us" class="btn btn-primary">JOIN US</a>
+            <nav>
+                <ul id="primaryNav" class="nav" aria-label="Primary">
+
+                    <li><a href="index.html">Home</a></li>
+                    <!-- <li><a href="#about">About</a></li> -->
+                    <!-- <li><a href="#initiatives">Initiatives</a></li> -->
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="team.html">Team</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <!-- <li><a href="#sponsors">Sponsors</a></li> -->
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact" class="btn btn-primary">Contact</a></li>
+                    <li class="dropdown">
+                       <a href="#" class="dropbtn">Join Us</a>
+                        <div class="dropdown-content">
+                        <a href="/register.html">Register</a>
+                        <a href="/login.html">Login</a>
+                        </div>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <!--<section class="hero">
+        <!-- <section class="hero">
             <div class="container hero-inner">
                 <div class="hero-content">
                     <h1>Ignite. Innovate. Impact.</h1>
@@ -61,23 +76,20 @@
             </video>
 
             <!-- Content -->
-            <section>
             <div class="hero-content2">
-            <h2>
-              <span class="tagline" id="tagline"></span>
-              <span class="typed-cursor">|</span>
-            </h2>
-            </div>
-            </section>  
+            <h1>Ignite. Innovate. Impact.</h1>
+            <p>Entrepreneurship Cell of our college empowering students to build, launch, and lead through hands-on programs, startup support, and a vibrant community.</p>
             <div class="buttons">
+            <!-- <button class="btn">Explore Events</button>
+            <button class="btn">Join E-Cell</button> -->
+            <a href="#events" class="btn explore">Explore Events</a>
+            <a href="#contact" class="btn join">Join E-Cell</a>
             </div>
-            <section>
              <ul class="stats" aria-label="Key stats">
-    <li><strong data-goal="50">0</strong><span>Startups mentored</span></li>
-    <li><strong data-goal="20000">0</strong><span>Attendees reached</span></li>
-    <li><strong data-goal="100">0</strong><span>Workshops</span></li>
-  </ul>
-  </section>
+                <li><strong>50+</strong><span>Startups mentored</span></li>
+                 <li><strong>20K+</strong><span>Attendees reached</span></li>
+                 <li><strong>100+</strong><span>Workshops</span></li>
+            </ul>
         </div>
     </div>
     </section>
@@ -163,13 +175,13 @@
 
         </section>
 
-        <section id="gallery" class="section gallery">
+        <!-- <section id="gallery" class="section gallery">
             <div class="container">
                 <h2 class="center">Gallery</h2>
                 <div class="gallery-grid">
-                    <a href="img/edc-pic1.jpg" class="gallery-item"><img alt="Event" src="img/edc-pic1.jpg"></a>
-                    <a href="img/edc-pic2.jpg" class="gallery-item"><img alt="Workshop" src="img/edc-pic2.jpg"></a>
-                    <a href="img/edc-pic3.jpg" class="gallery-item"><img alt="Talk" src="img/edc-pic3.jpg"></a>
+                    <a href="img/speaker-1.jpg" class="gallery-item"><img alt="Event" src="img/speaker-1.jpg"></a>
+                    <a href="img/speaker-2.jpg" class="gallery-item"><img alt="Workshop" src="img/speaker-2.jpg"></a>
+                    <a href="img/speaker-3.jpg" class="gallery-item"><img alt="Talk" src="img/speaker-3.jpg"></a>
                     <a href="img/edc-pic4.jpg" class="gallery-item"><img alt="Hack" src="img/edc-pic4.jpg"></a>
                     <a href="img/bhartiyam-25.jpg" class="gallery-item"><img alt="Hack" src="img/bhartiyam-25.jpg"></a>
                     <a href="img/bhartiyam2-25.jpg" class="gallery-item"><img alt="Hack" src="img/bhartiyam2-25.jpg"></a>
@@ -179,12 +191,12 @@
                     <a href="img/edc-pic6.jpg" class="gallery-item"><img alt="Hack" src="img/edc-pic6.jpg"></a>
                 </div>
             </div>
-        </section>
+        </section> -->
 
-        <section id="team" class="section team">
+        <!-- <section id="team" class="section team">
             <div class="container">
                 <!-- Core Team -->
-                <h2 class="center">Core Team</h2>
+                <!-- <h2 class="center">Core Team</h2>
                 <div class="team-grid">
                     <article class="person">
                         <img src="img/members.webp" alt="Overall Head">
@@ -192,7 +204,7 @@
                         <p>Overall Head & EDC Corrdinator</p>
                     </article>
                     <article class="person">
-                        <img src="img/members.webp" alt="Overall Head">
+                        <img src="img/Bhavya.jpg" alt="Overall Head">
                         <h3>Bhavya Chawda</h3>
                         <p>Overall Head & Start-up Coordinator</p>
                     </article>
@@ -222,9 +234,9 @@
                         <p>Graphic Design Head</p>
                     </article>
                     <article class="person">
-                        <img src="img/members.webp" alt="Public Relation Head">
+                        <img src="img/minakshi.jpg" alt="Public Relation Head">
                         <h3>Minakshi </h3>
-                        <p>Public Relation Head/p>
+                        <p>Public Relation Head</p>
                     </article>
                     <article class="person">
                         <img src="img/members.webp" alt="Marketing Head">
@@ -246,10 +258,11 @@
                         <h3>Divyansh</h3>
                         <p>Hr Head</p>
                     </article>
-                
+            </div>     
 
-                <!-- Directors -->
-                 <div class="container">
+                Directors
+                 <h2 class="designation">Directors</h2>
+                 <div class="directors">
                     <div class="team-grid"></div> 
                         <h2 class="center">Directors</h2>
                         <article class="person">
@@ -323,9 +336,9 @@
                                 <p>Marketing Director</p>
                             </article>
                     </div>
-           <!-- </div>  -->
+          
         </div>
-        </section>
+    </section> -->
 
         <section id="sponsors" class="section sponsors">
             <div class="container">
@@ -409,11 +422,34 @@
                 </form>
             </div>
         </section>
+        <section>
+            <!-- Social Media Sidebar -->
+            <div class="social-sidebar">
+            <a href="https://www.linkedin.com/company/entrepreneurshipdevelopmentcell/about/?viewAsMember=true" target="_blank" class="icon linkedin">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.instagram.com/edcbvducoep?igsh=eng5ZngzN3V6c2Zs" target="_blank" class="icon instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:bhavyachawda19@gmail.com" class="icon mail">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <!-- <a href="https://github.com/your-link" target="_blank" class="icon github">
+                <i class="fab fa-github"></i>
+            </a> -->
+            </div>
+        </section>
     </main>
 
-    <footer class="site-footer">
+     <footer class="site-footer">
         <div class="container footer-inner">
-            <p>© <span id="year"></span> E-Cell • Built by Bhavya <br> bhavyachawda19@gmail.com</p>
+            <p>© <span id="year"></span> E-Cell • Built by Bhavya Chawda| Ansh Tarsoliya <br> bhavyachawda19@gmail.com</p>
+            <ul class="contact-list">
+                        <li><strong>Email:</strong> bhavyachawda19@gmail.com</li>
+                        <li><strong>Ph.No</strong>+916263537991</li>
+                        <li><strong>Address:</strong> Bharti Vidyapeeth College Of Engineering, Pune</li>
+                        <li><strong>Hours:</strong> Mon–Fri, 10:00–17:00</li>
+                    </ul>
             <a href="#top" class="to-top" aria-label="Back to top">↑</a>
         </div>
     </footer>
