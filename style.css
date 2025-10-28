@@ -6,6 +6,19 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 500px;
+  height: 300px;
+}
+
+.event-grid {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ row-gap: 20px;
+}
+
+.btn-light {
+  /* margin: 50px; */
+  margin-top: 50px;
 }
 
 .event-card .meta {
